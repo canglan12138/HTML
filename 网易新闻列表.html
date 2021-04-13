@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#outer {
+			width: 300px;
+			margin: 25px auto;
+			border-top: 1px solid rgb(221, 221, 221);
+		}
+		.title {
+			display: inline-block;
+			padding: 5px 0;
+			margin-top: -1px;
+			border-top: 1px solid rgb(255, 0, 0);
+		}
+		h2 {
+			color: rgb(64, 64, 107);
+			margin-top: -1px;
+			cursor: pointer;
+		}
+		ul {
+			margin-top: 10px;
+		}
+		li {
+			list-style: none;
+			margin-bottom: 10px;
+		}
+		li::before {
+			content: '■';
+			font-size: 12px;
+			margin-right: 2px;
+			color: rgb(102, 102, 102);
+		}
+		a {
+			text-decoration: none;
+			color: rgb(102, 102, 102);
+			font-size: 14px;
+		}
+		a:hover {
+			color: rgb(255, 0, 0);
+		}
+	</style>
+</head>
+<body>
+<div id="outer">
+	<div class="title">
+		<h2>体育</h2>
+	</div>
+	<img src="./img/03/1.jpeg" alt="">
+	<ul>
+		<li><a href="javascript:;">乔治:我爱LA 喜欢和LBJ一起打球</a></li>
+		<li><a href="javascript:;">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a></li>
+		<li><a href="javascript:;">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a></li>
+		<li><a href="javascript:;">CBA下季新赛制:常规赛4组循环 增至46轮</a></li>
+	</ul>
+</div>
+</body>
+</html>
