@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		.clearfix::before,
+		.clearfix::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		.outer {
+			width: 100px;
+			height: 200px;
+			background: red;
+		}
+		.inner_top {
+			height: 75px;
+			background: green;
+		}
+		.inner_center {
+			margin-top: 10px;
+			background: deepskyblue;
+			/*padding: 5px;*/
+			/*padding: 0 18px 18px 18px;*/
+		}
+
+		/*h2 {*/
+		/*	margin: 100px 0;*/
+		/*}*/
+	</style>
+</head>
+<body>
+<div class="outer clearfix">
+	<div class="inner_top"></div>
+	<div class="inner_center">123456789</div>
+	<div class="inner_footer"></div>
+<!--	<h2>这是h2</h2>-->
+<!--	<h3>这是h3</h3>-->
+</div>
+</body>
+</html>

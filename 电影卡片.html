@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./font-awsome/css/all.css">
+	<style>
+		/*外部容器居中*/
+		.outer {
+			width: 240px;
+			margin: 50px auto;
+			box-shadow: 0 0 10px rgba(0,0,0,.3);
+		}
+
+		/*设置图片样式*/
+		.picture img {
+			vertical-align: bottom;
+		}
+
+		/*内容区样式*/
+		.content {
+			margin-top: 8px;
+			padding: 0 18px 18px 18px;
+		}
+
+		/*大标题大小*/
+		h2 {
+			color: #717171;
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+		/*小标题大小*/
+		h3 {
+			color: rgb(172, 170, 170);
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+
+		h3::before {
+			content: '\f3c5';
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			margin-right: 7px;
+			margin-left: 3px;
+		}
+
+		/*内容文字大小*/
+		p {
+			color: rgb(172, 170, 170);
+			font-size: 13px;
+			line-height: 20px;
+		}
+
+		/*底部样式*/
+		.footer {
+			height: 19px;
+			padding: 14px 33px  14px 17px;
+			border-top: 1px solid rgb(233, 233, 233);
+		}
+
+		.star {
+			float: left;
+		}
+
+		.fa-star,.fa-telegram-plane {
+			color: rgb(221, 221, 221);
+		}
+
+		.hlight {
+			color: rgb(185, 203, 65);
+		}
+		.weibo {
+			float: right;
+		}
+		.fa-telegram-plane {
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<!--创建外部容器-->
+	<div class="outer">
+
+		<!--创建图片容器-->
+		<div class="picture">
+			<img src="./img/10/1.jpg" alt="">
+		</div>
+
+		<!--创建内容容器-->
+		<div class="content">
+			<!--大标题-->
+			<h2>动漫电影</h2>
+			<!--小标题-->
+			<h3>动漫电影</h3>
+			<!--内容-->
+			<p>这是一部很好看的动漫电影，非常好看的迪士尼动画电影</p>
+		</div>
+		<!--创建底部容器-->
+		<div class="footer">
+			<ul class="star">
+				<li class="fas fa-star hlight"></li>
+				<li class="fas fa-star hlight"></li>
+				<li class="fas fa-star "></li>
+				<li class="fas fa-star "></li>
+			</ul>
+			<ul class="weibo">
+				<li class="fab fa-telegram-plane"></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
