@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./ali_font/iconfont.css">
+	<!--多色图标引入js-->
+	<script src="ali_font/iconfont.js"></script>
+	<style>
+		/*多色图标定义样式*/
+		.icon {
+			width: 10em;
+			height: 10em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+		}
+
+		i.iconfont{
+			font-size: 140px;
+			font-family: 'iconfont';
+		}
+		p::before {
+			content: '\e98e';
+			font-family: 'iconfont';
+			font-size: 60px;
+		}
+	</style>
+</head>
+<body>
+	<!--方法1：实体引用-->
+	<i class="iconfont">&#xe98b;</i>
+
+	<!--方法2：类名引用-->
+	<i class="iconfont icon-dicengjiagou"></i>
+
+	<!--方法3：伪元素引用-->
+	<p></p>
+<!------------------------------------------------------------>
+
+	<!--支持多色图标，推荐使用-->
+	<svg class="icon" aria-hidden="true">
+		<use xlink:href="#icon-anquanyinsi"></use>
+	</svg>
+
+	<svg class="icon" aria-hidden="true">
+		<use xlink:href="#icon-guahudao"></use>
+	</svg>
+</body>
+</html>
