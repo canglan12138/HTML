@@ -1,0 +1,147 @@
+/*index样式*/
+
+/*顶部导航栏样式*/
+#nav_top_bar {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: rgb(51, 51, 51);
+  font-size: 12px;
+}
+#nav_top_bar a {
+  font-size: 12px;
+  display: block;
+  color: #b0b0b0;
+}
+
+/*左侧服务导航*/
+.server {
+  float: left;
+}
+.server li {
+  float: left;
+}
+/*二维码*/
+.app {
+  position: relative;
+}
+/*设置小三角*/
+.app::after {
+  display: none;
+  content: '';
+  width: 0;
+  height: 0;
+  /*设置四个方向的边框*/
+  border: 8px solid transparent;
+  /*去除上边框*/
+  border-top: none;
+  /*将下边框设为白色*/
+  border-bottom-color: white;
+  position: absolute;
+  /*居中*/
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+/*鼠标移入显示*/
+.app:hover .qr_code,
+.app:hover::after{
+  display: block;
+  height: 148px;
+}
+/*设置二维码*/
+.app .qr_code {
+  position: absolute;
+  width: 124px;
+  height: 0;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 4px rgba(0,0,0,.3);
+  left: -40px;
+  line-height: 1;
+  text-align: center;
+  /*设置过渡效果*/
+  transition: height 0.3s;
+}
+/*设置二维码图片*/
+.app .qr_code img{
+  width: 90px;
+  margin: 17px;
+  margin-bottom: 10px;
+}
+/*设置文字*/
+.app .qr_code span {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 0;
+}
+
+/*购物车*/
+.shop_car {
+  float: right;
+  margin-left: 25px;
+}
+.shop_car li {
+  width: 120px;
+}
+.shop_car li a {
+  text-align: center;
+  background: rgb(66, 66, 66);
+}
+.shop_car li a:hover {
+  color: rgb(255, 103, 0);
+}
+.shop_car:hover a {
+  background: rgb(255, 255, 255);
+}
+
+/*用户信息*/
+.user_info {
+  float: right;
+}
+.user_info li {
+  float: left;
+}
+
+/*设置竖线的样式*/
+.line {
+  font-size: 12px;
+  margin: 0 8px;
+  color: #424242;
+}
+
+/*头部样式*/
+.header {
+  height: 100px;
+}
+/*设置logo*/
+.header .logo {
+  float: left;
+  margin-top: 22px;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+.logo a {
+  width: 55px;
+  height: 55px;
+  left: 0;
+  position: absolute;
+  background: url("../img/mi-logo.png") #ff6700 center;
+  /*设置过渡动画*/
+  transition: left 0.3s;
+}
+
+.logo:hover .mi {
+  left: 55px;
+}
+/*home logo*/
+.logo .home {
+  left: -55px;
+  background: url("../img/mi-home.png") #ff6700 center;
+}
+.logo:hover .home {
+  left: 0;
+}
