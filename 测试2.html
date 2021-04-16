@@ -11,21 +11,27 @@
 			background: deepskyblue;
 		}
 		li {
-			font-size: 12px;
 			background: yellow;
 		}
 
 		 a {
 			 display: block;
 			 width: 180px;
-			 height: 48px;
-			 line-height: 48px;
-			 background: red;
+			 height: 60px;
+			 line-height: 60px;
 			 padding: 0 20px;
+			 font-size: 20px;
 		}
-		 span {
-			 float: right;
+		 a:hover {
+			 background: red;
+		 }
+		 a:hover span {
 			 background: green;
+		 }
+		span {
+			font-size: 20px;
+			/*vertical-align: middle;*/
+			float: right;
 		}
 	</style>
 </head>
@@ -34,13 +40,31 @@
 		<li>
 			<a href="#">
 				我是a
-				<span>我是span标签</span>
+				<span>|</span>
 			</a>
 		</li>
 		<li>
 			<a href="#">
 				我是a
-				<span>我是span标签</span>
+				<span>|</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				我是a
+				<span>|</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				我是a
+				<span>|</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				我是a
+				<span>|</span>
 			</a>
 		</li>
 	</ul>

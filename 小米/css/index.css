@@ -276,10 +276,12 @@ banner 样式
   height: 460px;
   /*溢出隐藏*/
   overflow: hidden;
+  position: relative;
 }
 /*bannner 列表*/
 .banner_list {
   width: 6130px;
+  position: absolute;
 }
 .banner_list li {
   float: left;
@@ -289,14 +291,12 @@ banner 样式
 }
 
 /*方向箭头*/
-.banner_window {
-  position: relative;
-}
 /*左箭头*/
 .banner_outer .left_arrow {
   position: absolute;
   top: 210px;
   left: 240px;
+  cursor: pointer;
 }
 .banner_outer .left_arrow i{
   font-size: 40px;
@@ -307,6 +307,7 @@ banner 样式
   position: absolute;
   top: 210px;
   right: 10px;
+  cursor: pointer;
 }
 .banner_outer .right_arrow i{
   font-size: 40px;
@@ -326,7 +327,8 @@ banner 样式
   background: rgba(0,0,0,0.4);
   border-radius: 50%;
   border: 2px solid rgba(0,0,0,0.2);
-  background-clip: content-box;
+  /*设置背景颜色延伸到内边距下面*/
+  background-clip: padding-box;
 }
 .banner_btn_list li a {
   display: block;
