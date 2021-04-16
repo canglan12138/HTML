@@ -24,8 +24,6 @@ window.onload = function () {
     banner_btn_all[current].className = 'current_btn'
   }
 
-  /*获取窗口元素*/
-  var banner_window = document.getElementsByClassName('banner_window')[0]
   /*获取 banner_list 元素*/
   var banner_list = document.getElementsByClassName('banner_list')[0]
   /*获取所有图片*/

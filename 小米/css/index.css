@@ -15,6 +15,9 @@
   display: block;
   color: #b0b0b0;
 }
+#nav_top_bar a:hover {
+  color: white;
+}
 
 /*左侧服务导航*/
 .server {
@@ -68,6 +71,7 @@
   text-align: center;
   /*设置过渡效果*/
   transition: height 0.3s;
+  z-index: 99;
 }
 /*设置二维码图片*/
 .app .qr_code img{
@@ -94,11 +98,11 @@
   text-align: center;
   background: rgb(66, 66, 66);
 }
-.shop_car li a:hover {
-  color: rgb(255, 103, 0);
-}
 .shop_car:hover a {
   background: rgb(255, 255, 255);
+}
+#nav_top_bar .shop_car li a:hover {
+  color: rgb(255, 103, 0);
 }
 
 /*用户信息*/
@@ -115,7 +119,6 @@
   margin: 0 8px;
   color: #424242;
 }
-
 
 /*
 头部样式
@@ -272,7 +275,6 @@ banner 样式
   width: 100%;
 }
 .banner_window {
-  width: 1226px;
   height: 460px;
   /*溢出隐藏*/
   overflow: hidden;
@@ -291,27 +293,28 @@ banner 样式
 }
 
 /*方向箭头*/
-/*左箭头*/
-.banner_outer .left_arrow {
+.left_arrow,.right_arrow {
+  height: 42px;
+  padding: 10px 5px;
   position: absolute;
-  top: 210px;
-  left: 240px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   cursor: pointer;
-}
-.banner_outer .left_arrow i{
   font-size: 40px;
   color: rgb(207, 213, 214);
+}
+/*左箭头*/
+.left_arrow {
+  left: 234px;
 }
 /*右箭头*/
-.banner_outer .right_arrow {
-  position: absolute;
-  top: 210px;
-  right: 10px;
-  cursor: pointer;
+.right_arrow {
+  right: 0px;
 }
-.banner_outer .right_arrow i{
-  font-size: 40px;
-  color: rgb(207, 213, 214);
+.left_arrow:hover,
+.right_arrow:hover {
+  background: rgb(106, 110, 112);
 }
 /*导航按钮*/
 .banner_btn {
@@ -339,4 +342,34 @@ banner 样式
   background: rgba(249, 249, 249,.4);
 }
 
+/*右侧工具栏样式*/
+.right_tools {
+  position: fixed;
+  bottom: 60px;
+  width: 26px;
+  height: 206px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(248, 248, 248);
+  /* left + margin left + width + margin right + right = 视口宽度*/
+  /*  auto + 0 + 26 + 0 + 50% = 视口宽度*/
+  right: 50%;
+  margin-right: -641px;
+}
+.right_tools a {
+  display: block;
+  height: 18px;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(153, 153, 153);
+}
+
+.right_tools a:first-child {
+  margin-top: 13px;
+}
+.right_tools a:not(:first-child) {
+  margin-top: 20px;
+}
+.right_tools a:hover {
+  color: rgba(50, 45, 47, 0.82);
+}
 
