@@ -191,6 +191,7 @@
   position: absolute;
   left: -120px;
   padding: 20px 0;
+  z-index: 8;
 }
 .left_menu li a {
   height: 42px;
@@ -262,4 +263,78 @@
   border-top: 1px solid rgb(224, 224, 224);
   box-shadow: 0 5px 3px rgba(0,0,0,.2);
 }
+
+/*
+banner 样式
+*/
+
+.banner_outer {
+  width: 100%;
+}
+.banner_window {
+  width: 1226px;
+  height: 460px;
+  /*溢出隐藏*/
+  overflow: hidden;
+}
+/*bannner 列表*/
+.banner_list {
+  width: 6130px;
+}
+.banner_list li {
+  float: left;
+}
+.banner_list img {
+  width: 1226px;
+}
+
+/*方向箭头*/
+.banner_window {
+  position: relative;
+}
+/*左箭头*/
+.banner_outer .left_arrow {
+  position: absolute;
+  top: 210px;
+  left: 240px;
+}
+.banner_outer .left_arrow i{
+  font-size: 40px;
+  color: rgb(207, 213, 214);
+}
+/*右箭头*/
+.banner_outer .right_arrow {
+  position: absolute;
+  top: 210px;
+  right: 10px;
+}
+.banner_outer .right_arrow i{
+  font-size: 40px;
+  color: rgb(207, 213, 214);
+}
+/*导航按钮*/
+.banner_btn {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+.banner_btn_list li {
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+  float: left;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.2);
+  background-clip: content-box;
+}
+.banner_btn_list li a {
+  display: block;
+  height: 100%;
+}
+/*当前点击的按钮*/
+.banner_btn_list li.current_btn {
+  background: rgba(249, 249, 249,.4);
+}
+
 
