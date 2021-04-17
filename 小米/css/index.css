@@ -373,3 +373,56 @@ banner 样式
   color: rgba(50, 45, 47, 0.82);
 }
 
+/*广告栏样式*/
+.ad_window {
+  height: 170px;
+  margin-top: 14px;
+}
+.ad_list li {
+  float: left;
+  width: 316px;
+  height: 170px;
+  background: yellow;
+}
+/*卡片栏样式*/
+.ad_list li.ad_card {
+  width: 234px;
+  height: 170px;
+}
+.ad_card_list > li {
+  float: left;
+  width: 76px;
+  height: 83px;
+  background: rgb(95, 87, 80);
+  border: 1px solid rgb(102, 94, 87);
+}
+.ad_window .ad_card_list > li a {
+  padding: 12px;
+  display: block;
+  width: 52px;
+  height: 60px;
+  text-align: center;
+  color: rgb(207, 204, 202);
+}
+.ad_window .ad_card_list > li a:hover {
+  color: rgb(255, 255, 255);
+}
+.ad_card_list > li a i {
+  margin: 10px 0;
+  display: block;
+  font-size: 25px;
+}
+.ad_card_list > li a span {
+  display: block;
+  font-size: 12px;
+}
+/*广告栏样式*/
+.ad_first {
+  margin-left: 14px;
+}
+.ad_first ~ .ad{
+  margin-left: 15px;
+}
+.ad_list li a img {
+  width: 316px;
+}
