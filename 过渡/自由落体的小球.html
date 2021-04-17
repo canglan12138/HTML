@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		.outer {
+			width: 100%;
+			height: 500px;
+			border-bottom: 10px solid black;
+			overflow: hidden;
+		}
+
+		.ball1 {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: red;
+			animation: fall_ball 0.75s ease-in 1 forwards;
+		}
+
+		/*设置关键帧*/
+		@keyframes fall_ball {
+			from {
+				margin-top: 0;
+			}
+			20% {
+				margin-top: 400px;
+			}
+			40% {
+				margin-top: 200px;
+			}
+			60% {
+				margin-top: 400px;
+			}
+			80% {
+				margin-top: 300px;
+			}
+			to {
+				margin-top: 400px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="ball1"></div>
+	</div>
+</body>
+</html>

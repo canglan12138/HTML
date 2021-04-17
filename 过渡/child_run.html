@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0 auto;
+		}
+		.window {
+			width: 256px;
+			height: 256px;
+			background: url("../img/12/bg2.png");
+			animation: child 0.5s infinite steps(6,end);
+		}
+
+		/*设置关键帧*/
+		@keyframes child {
+			from {
+				background-position: 0 0 ;
+			}
+			to {
+				background-position: -1536px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="window">
+
+</div>
+</body>
+</html>

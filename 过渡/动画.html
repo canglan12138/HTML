@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			margin: 0 auto;
+			padding: 0;
+		}
+		.window {
+			width: 132px;
+			height: 271px;
+			overflow: hidden;
+			position: relative;
+		}
+		img {
+			position: absolute;
+			left: 0;
+			animation: mitu;
+			/*animation-duration: 1s;*/
+			/*animation-timing-function: steps(3,start);*/
+			/*!*动画执行的次数*!*/
+			/*animation-iteration-count: 1;*/
+			/*!*动画运行的方向*!*/
+			/*animation-direction: alternate-reverse;*/
+			/*!*动画的执行状态*!*/
+			/*animation-play-state: running;*/
+			/*!*动画的填充模式*!*/
+			/*animation-fill-mode: forwards;*/
+			animation: mitu 1s infinite steps(3,start);
+		}
+		/*指定关键帧*/
+		@keyframes mitu {
+			from {
+				left: 0;
+			}
+			to {
+				left: -396px;
+			}
+		}
+		img:hover {
+			animation-play-state: paused;
+		}
+	</style>
+</head>
+<body>
+<div class="window">
+	<img src="../img/11/bigtap-mitu-queue-big.png" alt="">
+</div>
+</body>
+</html>

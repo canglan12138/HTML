@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		body {
+			background: #d5d5d5;
+		}
+		span {
+			background: yellow;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			/*
+				transform 50%是自身的50%
+				搭配上面可以实现居中效果
+				特点：宽度和高度由内容而定
+			*/
+			transform: translateX(-50%) translateY(-50%);
+		}
+		.box1,.box2 {
+			margin-top: 50px;
+			float: left;
+			width: 100px;
+			height: 100px;
+			background: white;
+			margin-left: 20px;
+			transition: all 0.4s;
+		}
+		.box1:hover,.box2:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+	</style>
+</head>
+<body>
+<span>1235555555</span>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

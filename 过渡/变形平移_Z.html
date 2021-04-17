@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		/*开启视距*/
+		html {
+			/*人眼距离网页的距离*/
+			perspective: 800px;
+		}
+		body {
+			border: 1px solid red;
+		}
+		.box {
+			margin: 150px auto;
+			width: 100px;
+			height: 100px;
+			background: #bfa;
+			transition: 2s;
+		}
+
+		body:hover .box {
+			transform: translateZ(-3000px);
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
