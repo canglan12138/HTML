@@ -5,3 +5,43 @@ body {
     color: red;
   }
 }
+
+
+// less 中的单行注释，不会被解析到 css 中
+/* css 中的注释，会被解析到 css 中*/
+
+.box1 {
+  background: red;
+  .box2 {
+    background: green;
+  }
+  .box3 {
+    background: black;
+  }
+  //子元素写法
+  & > .son {
+    background: yellow;
+  }
+}
+
+//变量
+@a:500px;
+@b:#bfa;
+@c:box6;
+.box5 {
+  width: @a;
+  color: @b;
+}
+.@{c} {
+  width: @a;
+  background: @b;
+  background: url("@{c}/@{a}");
+}
+
+div {
+  width: 300px;
+  height: $width;
+}
+.@{c} {
+
+}

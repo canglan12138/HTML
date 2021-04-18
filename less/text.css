@@ -5,4 +5,30 @@ body {
 body div {
   color: red;
 }
+/* css 中的注释，会被解析到 css 中*/
+.box1 {
+  background: red;
+}
+.box1 .box2 {
+  background: green;
+}
+.box1 .box3 {
+  background: black;
+}
+.box1 > .son {
+  background: yellow;
+}
+.box5 {
+  width: 500px;
+  color: #bfa;
+}
+.box6 {
+  width: 500px;
+  background: #bfa;
+  background: url("box6/500px");
+}
+div {
+  width: 300px;
+  height: 300px;
+}
 /*# sourceMappingURL=text.css.map */
