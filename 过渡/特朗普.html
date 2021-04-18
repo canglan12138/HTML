@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.window {
+			margin: 200px auto;
+			width: 100px;
+			height: 100px;
+			background: url("./trump_run.png") no-repeat;
+			animation: trump 1.5s steps(5,end) infinite alternate;
+		}
+		/*设置关键帧*/
+		@keyframes trump {
+			from {
+				background-position: 0 0;
+			}
+			25% {
+				background-position: -500px 0;
+			}
+			25.1% {
+				background-position: -500px -100px;
+			}
+			50% {
+				background-position: 0px -100px;
+			}
+			50.1% {
+				background-position: 0px -200px;
+			}
+			75% {
+				background-position: -500px -200px;
+			}
+			75.1% {
+				background-position: -500px -300px;
+			}
+			to {
+				background-position: 0px -300px;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="window"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			margin: 100px auto;
+			background: #bfa;
+			transition: 2s;
+			transform-origin: 0 0;
+		}
+		.box:hover {
+			transform: scale(1.5);
+		}
+		.img_box {
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+			border: 1px solid red;
+			overflow: hidden;
+		}
+		img {
+			transition: 2s;
+		}
+		.img_box:hover img {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="img_box">
+		<img src="./复仇者/1.jpg" alt="">
+	</div>
+</body>
+</html>
