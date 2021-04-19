@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul {
+			width: 300px;
+			height: 600px;
+			border: 10px solid red;
+			/* 设置ul为弹性容器 */
+			display: flex;
+			flex-direction: row;
+			/* flex-wrap:
+                设置弹性元素是否在弹性容器中自动换行
+                可选值：
+                    nowrap 默认值，元素不会自动换行
+                    wrap 元素沿着辅轴方向自动换行
+                    wrap-reverse 元素沿着辅轴反方向换行
+            */
+
+			/* flex-wrap: wrap-reverse; */
+
+			/* flex-flow:  wrap 和 direction 的简写属性 */
+			 flex-flow: row wrap;
+
+
+			/*
+					justify-content
+							- 如何分配主轴上的空白空间（主轴上的元素如何排列）
+							- 可选值：
+									flex-start 元素沿着主轴起边排列
+									flex-end 元素沿着主轴终边排列
+									center 元素居中排列
+									space-around 空白分布到元素两侧
+									space-between 空白均匀分布到元素间
+									space-evenly 空白分布到元素的单侧
+
+			*/
+			/* justify-content: center; */
+
+			/*
+             align-items:
+                - 元素在辅轴上如何对齐
+                - 元素间的关系
+                    - 可选值：
+                        stretch 默认值，将元素的长度设置为相同的值
+                        flex-start 元素不会拉伸，沿着辅轴起边对齐
+                        flex-end 沿着辅轴的终边对齐
+                        center 居中对齐
+                        baseline 基线对齐
+             */
+
+			/* justify-content: center; */
+			align-items: flex-start;
+
+
+			/* align-content: 辅轴空白空间的分布 */
+			align-content: space-between;
+
+		}
+
+		ul li {
+			flex-shrink: 0;
+			list-style: none;
+			width: 100px;
+			line-height: 100px;
+			text-align: center;
+			font-size: 50px;
+		}
+		li:nth-child(1) {
+			background: yellow;
+		}
+		li:nth-child(2) {
+			background: blue;
+		}
+		li:nth-child(3) {
+			background: #bbffaa;
+		}
+		li:nth-child(4) {
+			background: red;
+		}
+		li:nth-child(5) {
+			background: deepskyblue;
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li>1
+		<div>1</div>
+	</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+</body>
+</html>
