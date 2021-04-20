@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w {
+  width: 693/40rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+/*# sourceMappingURL=style.css.map */
