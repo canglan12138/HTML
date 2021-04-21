@@ -1,0 +1,99 @@
+html {
+  overflow: hidden;
+}
+.top_bar {
+  height: 48px;
+  background: black;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*左侧菜单样式*/
+  /*logo 样式*/
+  /*个人信息样式*/
+}
+.top_bar .menu .three_line {
+  width: 18px;
+  height: 48px;
+  position: relative;
+}
+.top_bar .menu .three_line li {
+  width: 18px;
+  height: 1px;
+  background: white;
+  position: absolute;
+  transform-origin: left;
+  transition: 0.3s;
+}
+.top_bar .menu .three_line li:nth-child(1) {
+  margin-top: 18px;
+}
+.top_bar .menu .three_line li:nth-child(2) {
+  margin-top: 24px;
+}
+.top_bar .menu .three_line li:nth-child(3) {
+  margin-top: 30px;
+}
+.top_bar .menu .three_line:hover li:nth-child(1) {
+  transform: rotateZ(42deg);
+}
+.top_bar .menu .three_line:hover li:nth-child(2) {
+  opacity: 0;
+}
+.top_bar .menu .three_line:hover li:nth-child(3) {
+  transform: rotateZ(-42deg);
+}
+.top_bar .menu .three_line:hover + .list {
+  width: 100%;
+  height: 100%;
+}
+.top_bar .menu .list {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: black;
+  top: 48px;
+  left: 0;
+  transition: all 0.3s;
+  transform-origin: 20px 20px;
+}
+.top_bar .menu .list:hover {
+  height: 100%;
+  width: 100%;
+}
+.top_bar .menu .list li {
+  margin: 30px 14px 15px;
+  border-bottom: 1px solid white;
+}
+.top_bar .menu .list a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: white;
+}
+.top_bar .menu .list li:nth-child(6) {
+  position: relative;
+}
+.top_bar .menu .list span {
+  position: absolute;
+  top: 6px;
+  left: 25px;
+  color: white;
+}
+.top_bar .logo a {
+  display: block;
+  width: 122px;
+  height: 32px;
+  background: url("../dff63979.sprites-index@2x.png") no-repeat;
+  background-size: 400px 400px;
+}
+.top_bar .user_info {
+  width: 14px;
+  height: 16.8px;
+}
+.top_bar .user_info i {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

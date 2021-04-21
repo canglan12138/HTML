@@ -3,6 +3,12 @@
   padding: 0;
 }
 html {
+  /*
+    100vw = 1 个视口宽度（像素）其实就是设计图的像素宽度
+    1vw = 1% 个视口宽度
+    1em = 1 个字体大小
+    1rem = 1 个 html 字体大小
+  */
   font-size: 5.33333333vw;
   background-color: #eff0f4;
 }
@@ -12,6 +18,9 @@ html {
 .card_list,
 .more,
 .lesson_list {
+  /*
+    设计图的像素（px）rem/ 40
+  */
   width: 17.325rem;
   margin: 0 auto;
 }
