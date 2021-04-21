@@ -2,12 +2,157 @@
   margin: 0;
   padding: 0;
 }
-.w {
-  width: 693/40rem;
-  margin: 0 auto;
-}
 html {
   font-size: 5.33333333vw;
   background-color: #eff0f4;
+}
+.w,
+.top_bar,
+.banner,
+.card_list,
+.more,
+.lesson_list {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+.top_bar {
+  height: 4.375rem;
+  line-height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_bar h1 {
+  font-size: 1.25rem;
+}
+.top_bar a {
+  text-decoration: none;
+  color: #999999;
+}
+.top_bar a.logo {
+  color: #24253d;
+}
+.banner img {
+  width: 17.325rem;
+  height: 6.925rem;
+}
+.card_list {
+  height: 7.25rem;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+  /*每一项的样式*/
+}
+.card_list .item {
+  width: 7.875rem;
+  height: 2.625rem;
+  border-radius: 0.25rem;
+}
+.card_list .item a {
+  display: block;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  padding-left: 0.975rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.card_list .item:nth-child(1) {
+  background: #f97053;
+}
+.card_list .item:nth-child(2) {
+  background: #cd6efe;
+}
+.card_list .item:nth-child(3) {
+  background: #ff3971;
+}
+.card_list .item:nth-child(4) {
+  background: #1d92ff;
+}
+.more {
+  margin-bottom: 0.75rem;
+}
+.more .more_inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.375rem;
+}
+.more .more_inner .lesson {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 4.5rem;
+}
+.more .more_inner .lesson::before {
+  content: '';
+  display: block;
+  width: 0.1rem;
+  height: 0.85rem;
+  position: absolute;
+  background: #3a84ff;
+}
+.more .more_inner a {
+  text-decoration: none;
+}
+.more .more_inner .lesson a {
+  float: right;
+  display: block;
+  height: 0.725rem;
+  line-height: 0.725rem;
+  text-decoration: none;
+  color: #24253d;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-right: 0.6rem;
+}
+.more .more_inner a.plus {
+  color: #7b7baf;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+/*课程样式*/
+.lesson_list {
+  margin-top: 0.75rem;
+}
+.lesson_list ul {
+  width: 17.325rem;
+  height: 8.325rem;
+  display: flex;
+  overflow: scroll;
+  align-items: flex-start;
+}
+.lesson_list li {
+  flex: none;
+  margin-right: 0.4rem;
+  width: 8.25rem;
+  height: 8.25rem;
+  list-style: none;
+  background: white;
+  border-radius: 0.25rem;
+  box-shadow: 0.25rem 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+.lesson_list li .less_name_img {
+  width: 87%;
+  padding: 0.5rem;
+}
+.lesson_list li .less_name {
+  display: block;
+  padding-left: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.lesson_list li div {
+  height: 2rem;
+  line-height: 2rem;
+  display: flex;
+}
+.lesson_list li .teacher_name_img {
+  margin-top: 0.3rem;
+  padding: 0 0.5rem;
+  height: 1.25rem;
+}
+.lesson_list li .teacher_name {
+  color: #7b7baf;
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */

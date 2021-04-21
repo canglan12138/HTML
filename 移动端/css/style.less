@@ -4,15 +4,164 @@
 }
 
 @total-width:750;
-
-.w{
-  width: 693/40rem;
-  margin: 0 auto;
-}
-
 //设置根元素
 html{
   // 设置rem的比值
   font-size: (100vw/@total-width) * 40;
   background-color: #eff0f4;
+}
+
+.w{
+  width: (693rem / 40);
+  margin: 0 auto;
+}
+
+//头部容器样式
+.top_bar:extend(.w) {
+  height: (175rem / 40);
+  line-height: $height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: 1.25rem;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+  }
+  a.logo {
+    color: rgb(36, 37, 61);
+  }
+}
+
+//banner样式
+.banner:extend(.w) {
+  img {
+    width: (693rem/40);
+    height: (277rem/40);
+  }
+}
+
+//卡片列表样式
+.card_list:extend(.w) {
+  height: (290rem/40);
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+  /*每一项的样式*/
+  .item {
+    width: (315rem/40);
+    height: (105rem/40);
+    border-radius: .25rem;
+    a {
+      display: block;
+      height: (105rem/40);
+      line-height: $height;
+      padding-left: (39rem/40);
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+  }
+  .item:nth-child(1) {
+    background: rgb(249, 112, 83);
+  }
+  .item:nth-child(2) {
+    background: rgb(205, 110, 254);
+  }
+  .item:nth-child(3) {
+    background: rgb(255, 57, 113);
+  }
+  .item:nth-child(4) {
+    background: rgb(29, 146, 255);
+  }
+}
+
+//更多样式
+.more:extend(.w) {
+  margin-bottom: .75rem;;
+  .more_inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: (15rem/40);
+    .lesson {
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: (180rem/40);
+    }
+    .lesson::before {
+      content:'';
+      display: block;
+      width: (4rem/40);
+      height: (34rem/40);
+      position: absolute;
+      background: rgb(58, 132, 255);
+    }
+    a {
+      text-decoration: none;
+    }
+    .lesson a {
+      float: right;
+      display: block;
+      height: (29rem/40);
+      line-height: $height;
+      text-decoration: none;
+      color: rgb(36, 37, 61);
+      font-size: .85rem;
+      font-weight: bold;
+      margin-right: .6rem;
+    }
+    a.plus {
+      color: rgb(123, 123, 175);
+      font-size: .75rem;
+      font-weight: normal;
+    }
+  }
+}
+/*课程样式*/
+.lesson_list:extend(.w) {
+  margin-top: .75rem;
+  ul{
+    width: (693rem / 40);
+    height: (333rem/40);
+    display: flex;
+    overflow: scroll;
+    align-items: flex-start;
+  }
+  li {
+    flex: none;
+    margin-right: (16rem/40);
+    width: (330rem/40);
+    height: (330rem/40);
+    list-style: none;
+    background: white;
+    border-radius: .25rem;
+    box-shadow: .25rem 0 .5rem rgba(0,0,0,.2);
+    .less_name_img {
+      width: 87%;
+      padding: .5rem;
+    }
+    .less_name {
+      display: block;
+      padding-left: .5rem;
+      font-size: .85rem;
+      font-weight: bold;
+    }
+    div {
+      height: 2rem;
+      line-height: 2rem;
+      display: flex;
+    }
+    .teacher_name_img {
+      margin-top: .30rem;
+      padding: 0 .5rem;
+      height: 1.25rem;
+    }
+    .teacher_name {
+      color: rgb(123, 123, 175);
+      font-size: .75rem;
+    }
+  }
 }
