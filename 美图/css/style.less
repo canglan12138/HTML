@@ -35,29 +35,12 @@ html {
       li:nth-child(3) {
         margin-top: 30px;
       }
-      //鼠标移入三根线样式
-      &:hover{
-        li:nth-child(1) {
-          transform: rotateZ(42deg);
-        }
-        li:nth-child(2) {
-          //隐藏
-          opacity: 0;
-        }
-        li:nth-child(3) {
-          transform: rotateZ(-42deg);
-        }
-        + .list{
-          width: 100%;
-          height: 100%;
-        }
-      }
     }
     //列表样式
     .list {
-      position: absolute;
       width: 0;
       height: 0;
+      position: absolute;
       background: black;
       top: 48px;
       left: 0;
@@ -93,6 +76,26 @@ html {
     }
   }
 
+  //鼠标移入三根线样式
+  .menu:hover {
+    .three_line li:nth-child(1) {
+      transform: rotateZ(42deg);
+    }
+    .three_line li:nth-child(2) {
+      //隐藏
+      opacity: 0;
+    }
+    .three_line li:nth-child(3) {
+      transform: rotateZ(-42deg);
+    }
+  }
+  .menu:hover {
+    .list{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   /*logo 样式*/
   .logo {
     a {
@@ -121,14 +124,13 @@ html {
 //      order: 1;
 //    }
 //    .menu {
-//      position: static;
 //      order: 2;
 //      .three_line {
 //        display: none;
 //      }
 //      .list {
 //        display: flex;
-//        position: relative;
+//        position: static;
 //      }
 //    }
 //    .user_info {
