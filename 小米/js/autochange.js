@@ -15,7 +15,7 @@ window.onload = function () {
       }
       left_arrow.num = current
       banner_list.style.left = -current * 1226 + 'px'
-      setbtn(banner_btn_all,current)
+      setbtn()
     },2000)
   }
 
@@ -73,7 +73,7 @@ window.onload = function () {
       /*
       * 对应的按钮显示
       * */
-      setbtn(banner_btn_all,current)
+      setbtn()
       /*
       * 开启定时器
       * */
